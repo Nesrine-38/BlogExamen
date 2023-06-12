@@ -1,0 +1,15 @@
+{
+    "name": "nesri/blog-examen",
+    "autoload": {
+        "psr-4": {
+            "Nesri\\BlogExamen\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nesrine ishak",
+            "email": "nesrineissac@gmail.com"
+        }
+    ],
+    "require": {}
+}
