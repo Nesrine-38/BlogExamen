@@ -1,0 +1,74 @@
+.titre{
+    color:#ea5455;
+    text-align: center;
+}
+.formContact{
+    margin: 20px;
+    border: 1px solid #FFC0CB;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 3px 3px 0px #FFC0CB;
+}
+
+.label{
+    color: rgba(238, 103, 97, 0.5);
+    font-weight: bold;
+}
+#id-article{
+    width: 84.375em;
+    display: flex;
+}
+
+#id-article,.label,#commentaire {
+    margin: 10px;
+}
+
+
+#commentaire {
+    display: flex;
+    width: 84.375em;
+    height: 40px;
+    resize: none;
+}
+.btn {
+
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  .btn {
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #FFC0CB 0%, #ea5455 100%);
+    box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  .btn:active {
+    opacity: 0.5;
+  }
+
+
+
+
+
+@media screen and (max-width: 1150px) {
+
+    .MainContent{
+        .titre{
+            font-size: small;
+            text-align: left;
+        }}
+    .formContact,#id-article,#commentaire{
+        width: 90%;
+    }}

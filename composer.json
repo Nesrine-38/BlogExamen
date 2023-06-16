@@ -2,8 +2,11 @@
     "name": "nesri/blog-examen",
     "autoload": {
         "psr-4": {
-            "Nesri\\BlogExamen\\": "src/"
+            "App\\": "src/"
         }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t public"
     },
     "authors": [
         {
@@ -11,5 +14,8 @@
             "email": "nesrineissac@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "config": {
+        "process-timeout": 0
+    }
 }
