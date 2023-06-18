@@ -1,3 +1,36 @@
+.bouton{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+.cssbuttons-io-button {
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  background: NONE;
+  color: #ad5389;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em PINK;
+  letter-spacing: 0.05em;
+
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 6px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em pink;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em pink;
+}
+
+
+
+
 
 .cta {
     border: none;

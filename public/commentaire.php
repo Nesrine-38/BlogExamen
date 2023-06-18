@@ -11,7 +11,7 @@ $instance = new ArticleRepository();
 $comments = new CommentaireRepository();
 $Commentaire = $comments->findAll();
 
-$comments->persist(new Commentaire("ugug",1,1));
+//$comments->persist(new Commentaire("ugug", 1, 1));
 
 ?>
 
@@ -56,17 +56,30 @@ $comments->persist(new Commentaire("ugug",1,1));
   </header>
   <section>
     <MAIN class="MainContent">
-      <form action="#" method="POST" class="formContact shadow p-3 mb-5 bg-body rounded">
-
-        <label for="date" class="label">Numero d'article</label>
-        <input type="number" id="id-article" name="id-article" placeholder="veuillez mettre le numero d'article"
-          required>
+      <form method="post" class="formContact shadow p-3 mb-5 bg-body rounded">
 
         <label for="commentaire" class="label">Votre Commentaire</label>
         <textarea id="commentaire" name="commentaire" placeholder="Entrez votre message" required></textarea>
 
+        <label  class="label">Numero d'article</label>
+        <input type="number" id="id-article" name="id-article" placeholder="veuillez mettre le numero d'article"
+          required>
+
+        <label  class="label">Identifiant commentaire</label>
+        <input type="number" id="id-article" name="id-article" placeholder="veuillez mettre l'identifiant du commentaire"
+          >
+
         <button type="submit" class="btn"> Ajouter votre commentaire</button>
       </form>
+      <?php
+
+      if (!empty($_POST['comment']) && !empty($_POST['id_article'])&& !empty($_POST['id']) ) {
+        $comments->persist (new Commentaire($_POST['comment'], $_POST['id_article']));
+        echo "<p class=\"text-success\">You successfully added a product with id {$rep->getId()}</p>";
+      }
+
+      ?>
+      </div>
 
     </MAIN>
 

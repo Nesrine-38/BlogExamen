@@ -7,7 +7,7 @@ private string $comment;
 private int $id_article;
 private int $id;
 
-public function __construct(string $comment,int $id_article, int $id)
+public function __construct(string $comment,int $id_article, int $id=null)
 {
     $this->comment = $comment;
     $this->id_article = $id_article;
