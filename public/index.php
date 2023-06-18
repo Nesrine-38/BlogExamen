@@ -53,6 +53,7 @@ $Article = $instance->findAll();
 <section>
 <div class="container-fluid">
         <h1 class="text-center" style="color:#D3D3D3;">Listes d'articles</h1>
+        
 
         <div class="input-container">
         <input type="search" name="search" class="input" placeholder="search...">

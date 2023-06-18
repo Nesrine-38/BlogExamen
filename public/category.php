@@ -68,7 +68,7 @@ $category = $categories->findAll();
                 </div>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                   <button class="cta">
-                    <span class="hover-underline-animation"> Shop now </span>
+                    <span class="hover-underline-animation"> voir plus </span>
                     <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                       id="arrow-horizontal">
                       <path transform="translate(30)"

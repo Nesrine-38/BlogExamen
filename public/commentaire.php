@@ -67,14 +67,7 @@ $comments->persist(new Commentaire("ugug",1,1));
 
         <button type="submit" class="btn"> Ajouter votre commentaire</button>
       </form>
-      <?php
-      if (!empty ($_POST['comment']) && !empty ($_POST['id_article'])) {
-        $commentaire = new Commentaire($_POST['comment'], $_POST['id_article'], $_POST['id']);
-        $comments->persist($commentaire);
-        echo "<p class=\"text-success\">You successfully added a product with id {$commentaire->getId()}</p>";
-      }
-      // 
-      ?>
+
     </MAIN>
 
 
